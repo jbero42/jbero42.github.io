@@ -1,166 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Kalam:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Kalam:wght@300;400;700&display=swap");
 
 /*------------------------------------*/
 /*BASIC SETUP*/
 /*------------------------------------*/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*------------------------------------*/
 /*HEADINGS*/
 /*------------------------------------*/
-h1 {font-family: Roboto, sans-serif;
-    font-weight: 300;
-    font-size: 250%;
-    font-style: italic;
-    color:  rgba(206, 79, 79, 0.486);
-    padding: 10px;
+h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 250%;
+  font-style: italic;
+  padding: 10px;
+}
+#h1-2011 {
+  color: rgba(206, 79, 79, 0.486);
+}
+#h1-2012 {
+  color: rgb(199, 0, 40);
+  text-align: right;
 }
 
 h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* HEADER */
-/* Make the header a background-image with the castle. */
 
 /* THE BODY IS A COLUMN OF YEARS, but a flexbox isn't needed. */
-body{
-    font-family: Kalam, Arial, Helvetica, sans-serif ;
+body {
+  font-family: Kalam, Arial, Helvetica, sans-serif;
 }
 
-/* THE YEAR IS A COLUMN OF ROWS */
-.year {
-    background-color: rgba(95, 158, 160, 0.527);
-    
-    margin: 0 auto;
-}
-/* rows are in a year container which is flex-column. */
-.row-1 {
-    max-width: 1140px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    /* background-color: rgba(165, 42, 42, 0.438); */
-}
+/*Each year is a section with a hero image*/
 
 .hero-img-container {
-    flex: 1 0 70%;
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/castle.JPG);
-    background-size: cover;
+  flex: 1 0 70%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+#hero-img-container-2011 {
+  background-image: url(img/castle.JPG);
+  border: 3px solid rgba(206, 79, 79, 0.486);
+}
+#hero-img-container-2012 {
+  background-image: url(img/blossom.JPG);
+  margin-top: 100px;
+  border: 3px solid rgb(202, 21, 57);
 }
 
 .hero-text-container {
-    flex: 0 1 30%;
-    padding: 8px;
+  flex: 0 1 30%;
+  padding: 8px;
 }
 
+/* THE YEAR IS A COLUMN OF ROWS */
+
+.year {
+  margin: 0 auto;
+}
+
+#year-2011 {
+  background-color: rgba(95, 158, 160, 0.527);
+  padding-bottom: 100px;
+}
+
+#year-2012 {
+  background-color: rgba(201, 83, 142, 0.527);
+}
+
+/* rows are in a year container which is flex-column. */
+.row-1 {
+  max-width: 1140px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* background-color: rgba(165, 42, 42, 0.438); */
+}
 
 .row-2 {
-    display: flex;
-    align-items: center;
-    width: 100%;    
-    padding: 10px 0 10px 0;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: auto;
 }
 
 .img-2-container {
-    flex: 0 1 34%;
+  flex: 0 1 34%;
+  margin-left: 4px;
 }
 
 .img-2 {
-    width:100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .text-2-container {
-    flex: 0 1 16%;
-    padding-left: 4px;
+  flex: 0 1 16%;
+  padding-left: 4px;
 }
 
 .row-3 {
-    display: flex;
-    align-items: center;
-    width: 100%;    
-    padding: 10px 0 10px 0;
-    margin: auto;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .img-3-container {
-    flex: 0 1 60%;
+  flex: 0 1 60%;
 }
 
 .img-3 {
-    width:100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .text-3-container {
-    flex: 0 1 25%;
-    padding-left: 4px;
+  flex: 0 1 25%;
+  padding-left: 4px;
 }
 
 .row-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;    
-    padding: 10px 0 10px 0;
-    margin: auto;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 10px 0 10px 0;
+  margin: auto;
+  margin-top: 80px;
 }
 
 .img-4-container {
-    flex: 0 1 70%;
+  flex: 0 1 70%;
 }
 
 .img-4 {
-    width:100%;
-    display: block;
-    border-radius:40px;
+  width: 100%;
+  display: block;
+  border-radius: 40px;
 }
 
 .text-4-container {
-    flex: 0 1 25%;
-    padding: 20px 0 10px 0;
-    font-size: 150%;
+  flex: 0 1 25%;
+  padding: 20px 0 10px 0;
+  font-size: 150%;
 }
 
 .row-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;    
-    padding: 30px;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 120px;
-    background-color: rgb(206, 79, 79);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 120px;
+  background-color: rgb(206, 79, 79);
 }
 
 .img-5-container {
-    flex: 0 1 70%;
+  flex: 0 1 70%;
 }
 
 .img-5 {
-    width:100%;
-    display: block;
-    border-radius:40px;
+  width: 100%;
+  display: block;
+  border-radius: 40px;
 }
 
 .text-5-container {
-    flex: 0 1 25%;
-    padding-top: 8px;
-    font-size: 300%;
-    
+  flex: 0 1 25%;
+  padding-top: 8px;
+  font-size: 300%;
 }
